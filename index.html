@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <h1 id="title">Survey Form</h1>
+      <p id="description">
+        This survey-form providing information about youself.
+      </p>
+
+      <form id="survey-form">
+        <label id="name-label" for="name">Name:</label>
+        <input
+          type="text"
+          id="name"
+          name="Full_name"
+          placeholder="Last and First name" required
+        /><br><br>
+        <label id="email-label" for="email">Email:</label>
+        <input
+          id="email"
+          type="email"
+          name="email"
+          placeholder="Enter a valid email address"
+          required
+        /><br><br>
+         <label for="age" id="number-label" value="age">Age:
+        <input
+          type="number"
+          id="number"
+          name="number"
+          placeholder="age from 10-150"
+          min="10"
+          max="150"
+          required
+        />
+      </label>
+      <br>
+        <!-- <label for= "name" id="name-label" value="Age"> *Age
+            <input type="number" id="number" name="number" min="1" max="200" class="font" placeholder= "Age" required/>
+          </label> -->
+        <p>Please select the correct gender.<p>
+        <!-- <input type="radio" name="gender" value="male" /> Male<br />
+        <input type="radio" name="gender" value="female" /> Female<br />
+        <input type="radio" name="gender" value="other" /> Other<br /> -->
+         <label id="dropdown" for="gender">Gender:</label>
+        <select id="dropdown">
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option> </select>
+          
+          <p>Select your qualification:<p>
+          <ul class= "radio-a" style="list-style: none;"> 
+        <label><input type="radio" name="education" value="secondary level" id=" secondary level"/> Secondary level</label> <br >
+        <label><input type="radio" name="education" value="higher secondary level" id="higher secondary level"form="servey-form"/> Higher secondary level</label><br>
+        <label><input type="radio" name="education" value="Applied science" id=" Applied science"form="servey-form"/> Applied science</label><br>
+        <label> <input type="radio" name="education" value="University level" id= "University level"form= "servey-form" /> University level</label><br>
+          </ul> 
+      <p for="hobbies">Choose your hobbies:</p> 
+ 
+      <ul id="hobbies" style="list-style: none;">
+        <li class="checkbox"><label><input name="hobbies" value="1" type="checkbox" >Football</input></label></li>
+        <li class="checkbox"><label><input name="hobbies" value="2" type="checkbox" >Basketball</input></label></li>
+        <li class="checkbox"><label><input name="hobbies" value="3" type="checkbox" >Circket</input></label></li>
+        <li class="checkbox"><label><input name="hobbies" value="4" type="checkbox" >Movies</input></label></li>
+        <li class="checkbox"><label><input name="hobbies" value="5" type="checkbox" >Dancing</input></label></li>
+        <li class="checkbox"><label><input name="hobbies" value="6" type="checkbox" >Others</input></label></li>
+      </ul>
+            <textarea id="textarea" name="msg" maxlength="300" rows="5"> write short description about yourself</textarea>
+       <p>   
+        <input type="submit" id="submit" value="Submit">
+          </p>
+      </form>
+    </main>
+  </body>
+</html>
